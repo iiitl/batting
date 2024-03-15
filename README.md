@@ -22,7 +22,7 @@ To run the backend
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables to your .env file of backend
 
 ```env
 dburl="mongodb+srv://shivam:QvkgS1BU2tYCStMt@shivam.e6xu6uz.mongodb.net/betApp?retryWrites=true&w=majority"
@@ -32,7 +32,16 @@ TWILIO_MESSAGING_SERVICE_ID="MGa06de2057ede4ce42dbb1ab037cc85c4"
 TWILIO_ADMIN_NUMBER="+16562130651"
 JWT_KEY="bets"
 ```
+env for Frontend
+```env
+VITE_REACT_APP_BACKEND_URL="http://localhost:5200"
 
+```
+
+## Note
+
+Login with phoneNo. +91 11111-11111
+password= 123456
 ## Contributing
 
 Contributions are always welcome! Happy coding!
