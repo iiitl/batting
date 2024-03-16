@@ -46,6 +46,7 @@ const DetailsCard = ({
 
 
   return (
+    <div className="bg-blue-200 dark:bg-gray-700 dark:text-white">
     <div
       className={
         (result == "none" && normal) ||
@@ -53,7 +54,7 @@ const DetailsCard = ({
         (result == "win" && win)
       }
     >
-      <div className="flex my-2">
+      <div className="flex my-2 ">
         <span className="flex flex-col mx-3  text-black">
           <span className="text-lg font-semibold">Bet Initiator</span>
           <span className="text-lg font-light">{sender}</span>
@@ -195,6 +196,7 @@ const DetailsCard = ({
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };

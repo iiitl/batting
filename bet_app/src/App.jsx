@@ -6,14 +6,31 @@ import SiginUp from './pages/Sigin'
 import Home from './pages/Home'
 
 import List from './components/List'
+import { useEffect, useState } from 'react'
+import { ThemeProvider } from './context/theme'
 
 function App() {
  
+  const [themeMode, setThemeMode] = useState("light")
+
+  const lightTheme = () => {
+    setThemeMode("light")
+  }
+  const darkTheme = () => {
+    setThemeMode("dark")
+  }
+
+  useEffect(() => {
+    document.querySelector('html').classList.remove("light", "dark")
+    document.querySelector('html').classList.add(themeMode)
+
+  }, [themeMode]) 
 
   return (
     <>
       <div className="flex justify-center items-center">
         <BrowserRouter>
+        <ThemeProvider value={{themeMode, darkTheme, lightTheme}}>
           <Routes>
             <Route path="/" Component={SiginUp}></Route>
             <Route path="/login" Component={Login}></Route>
@@ -26,6 +43,7 @@ function App() {
               <Route path="/home/history" Component={List}></Route>
             </Route>
           </Routes>
+        </ThemeProvider>
         </BrowserRouter>
       </div>
     </>

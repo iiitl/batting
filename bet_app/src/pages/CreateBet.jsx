@@ -161,9 +161,9 @@ const CreateBet = () => {
   }, []);
 
   return (
-    <div className="w-screen h-full flex justify-center bg-blue-100 flex-col items-center">
+    <div className="w-screen h-full flex justify-center flex-col items-center bg-blue-200 dark:bg-gray-700 dark:text-white">
       <Nav username={username} />
-      <div className="w-full max-w-md p-8 m-4 bg-white rounded-lg shadow-2xl">
+      <div className="w-full max-w-md p-8 m-4 rounded-lg shadow-2xl">
         <h1 className="text-center text-3xl font-semibold mb-4">
           Initiate Bet
         </h1>
