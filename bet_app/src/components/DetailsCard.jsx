@@ -56,21 +56,21 @@ const DetailsCard = ({
       <div className="flex my-2">
         <span className="flex flex-col mx-3  text-black">
           <span className="text-lg font-semibold">Bet Initiator</span>
-          <span className="text-lg font-light">{sender}</span>
+          <span className="text-lg font-light capitalize">{sender}</span>
         </span>
         <span className="flex flex-col mx-3 text-black">
           <span className="text-lg font-semibold">Response</span>
-          <span className="text-lg font-light">{senderResp}</span>
+          <span className="text-lg font-light capitalize">{senderResp}</span>
         </span>
       </div>
       <div className="flex my-2">
         <span className="flex flex-col mx-3 text-black">
           <span className="text-lg font-semibold">Bet Receiver</span>
-          <span className="text-lg font-light">{receiver}</span>
+          <span className="text-lg font-light capitalize">{receiver}</span>
         </span>
         <span className="flex flex-col mx-3 text-black">
           <span className="text-lg font-semibold">Response</span>
-          <span className="text-lg font-light">{receiverResp}</span>
+          <span className="text-lg font-light capitalize">{receiverResp}</span>
         </span>
       </div>
 

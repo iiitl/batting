@@ -13,25 +13,25 @@ const Nav = ({ username }) => {
     navigate("/createBet");
   };
   return (
-    <div className=" w-full py-4  text-black flex flex-col px-3">
-      <div className="flex w-full justify-between  items-center">
-        <span className="flex  flex-col items-start">
+    <div className=" w-full py-4  text-black flex flex-col px-3 gap-2">
+      <div className="flex w-full justify-between  items-center gap-2">
+        <span className="flex flex-col items-start">
           <button
-            className=" font-bold  mr-2 "
+            className="font-bold  text-sm md:text-base mr-2 "
             onClick={() => {
               navigate("/home");
             }}
           >
             Home
           </button>
-          <span className=" text-md font-bold">
+          <span className="  text-sm md:text-base font-bold capitalize">
             Welcome,{username}
           </span>
         </span>
 
-        <span>
+        <div className="flex flex-wrap justify-end items-end gap-2">
           <button
-            className="bg-purple-800 text-white  text-sm px-1 py-1 font-bold rounded-md  mx-2"
+            className="bg-purple-800 text-white  text-sm md:text-base px-1 py-1 font-bold rounded-md"
             onClick={() => {
               CreateBet();
             }}
@@ -39,14 +39,14 @@ const Nav = ({ username }) => {
             Create Bet
           </button>
           <button
-            className="bg-red-600 text-white text-sm px-1  py-1 font-bold rounded-md"
+            className="bg-red-600 text-white  text-sm md:text-base px-1  py-1 font-bold rounded-md"
             onClick={() => {
               logout();
             }}
           >
             Logout
           </button>
-        </span>
+        </div>
       </div>
     </div>
   );
