@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <div className="w-screen h-screen flex bg-blue-100 flex-col">
       <Nav username={username} />
-      <div className="py-3 flex w-full justify-around my-2 text-black mt-2 border-solid border-b-2 border-slate-600">
+      <div className="py-3 flex gap-2 flex-wrap md:flex-row w-full justify-around my-2 text-black mt-2 border-solid border-b-2 border-slate-600">
         <span className="font-semibold  cursor-pointer relative liner">
           <NavLink
             className="nav_link"
