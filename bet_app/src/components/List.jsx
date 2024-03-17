@@ -22,7 +22,7 @@ const List = ({ BetList, setBetList }) => {
 
  
   return (
-    <div className="w-full flex flex-wrap p-12 mt-2 box-content gap-x-6">
+    <div className="w-full flex flex-wrap p-12 mt-2 box-content gap-6">
       {BetList?.map((bet, index) => {
         const {
           senderName,
