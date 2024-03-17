@@ -91,7 +91,7 @@ const Home = () => {
           </NavLink>
         </span>
       </div>
-      <div className="w-full h-full overflow-y-scroll scroller scroll-smooth  flex justify-center items-center">
+      <div className="w-full h-full overflow-y-scroll scroller scroll-smooth flex-wrap flex justify-center items-center">
         <List BetList={BetList} setBetList={setBetList} />
       </div>
     </div>

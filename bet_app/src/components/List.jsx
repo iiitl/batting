@@ -22,7 +22,7 @@ const List = ({ BetList, setBetList }) => {
 
  
   return (
-    <div className="w-[96%] pb-4 h-full flex flex-col scroller">
+    <div className="w-full flex flex-wrap p-12 mt-2 box-content gap-x-6">
       {BetList?.map((bet, index) => {
         const {
           senderName,
@@ -56,7 +56,8 @@ const List = ({ BetList, setBetList }) => {
         }
 
         return (
-          <DetailsCard
+          <div key={index} className="lg:w-[30%] md:w-[45%] w-full flex box-content ">
+            <DetailsCard
             key={index}
             betid={bet._id}
             sender={senderName}
@@ -80,6 +81,7 @@ const List = ({ BetList, setBetList }) => {
             sendResponse={SendRespone}
             setBetList={setBetList}
           />
+          </div>
         );
       })}
     </div>
